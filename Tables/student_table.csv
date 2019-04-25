@@ -1,0 +1,10 @@
+id,major,state,income,highschool,application,ethnicity
+1234,journalism,NY,65000,public,RD,white
+5867,secondary,ohio,75000,private,ED1,afrAmer
+9826,CLEG,california,45000,homeSchool,ED2,asian
+1037,IR,asia,85000,private,ED1,latino
+6342,math,texas,35000,public,RD,other
+7281,finance,colorado,150000,boarding,ED2,white
+2980,primary,florida,85000,homeSchool,ED1,latino
+3356,arts,NJ,120000,boarding,ED2,white
+953,film,wisconsin,55000,public,RD,afrAmer

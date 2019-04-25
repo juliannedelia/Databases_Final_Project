@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="final.css">
+	<script src="finalproject.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>AU Student Database</h1>
+
+	<p id="desc">In order to add a record, just click the "Add Record" button and a record will be added. <br>
+		In order to delete a record, just click the "Delete Record" button and a record will be deleted. <br>
+		In order to update a record, just click the "Update Record" button and a recored will be updated. <br>
+		If you wish to query the database, just click the query button. <br>
+		To view what the tables look like, hover over the "Table" tab and select which table you wish to view.
+	</p>
+
+	<nav id="menu">
+	<div>
+		<div id="change_tabs">
+			<button id="add"><a href="addrecord.html">Add Record</a></button> 
+			<button id="delete"><a href="deleterecord.html">Delete record</a></button> 
+			<button id="update"><a href="updaterecord.html">Update record</a></button> 
+			<button id="query"><a href="query.html">Query</a></button> 
+		</div>
+
+		<div id="dropdown">
+			<div id="tables"> Tables 
+				<div id="three_tabs">
+					<button id="stu_table">Student</button>
+					<button id="reg_table">Region</button>
+					<button id="sch_table">School</button>
+				</div>
+			</div> 
+		</div>
+	</div>
+	</nav>
+
+	<hr>
+
+	<div id="show_answer">
+		<div id="changed"></div>
+		
+	<table id="student_table">
+		<tr> <!-- ROW 1: Labels -->
+			<th>id</th>
+			<th>major</th>
+			<th>state</th>
+			<th>income</th>
+			<th>highschool</th>
+			<th>application</th>
+			<th>ethnicity</th>
+		</tr>
+		<tr> <!-- ROW 2: 1234 -->
+			<th>1234</th>
+			<th>journalism</th>
+			<th>NY</th>
+			<th>65000</th>
+			<th>public</th>
+			<th>RD</th>
+			<th>white</th>
+		</tr>
+		<tr> <!-- ROW 3: 5867 -->
+			<th>5867</th>
+			<th>secondary</th>
+			<th>ohio</th>
+			<th>75000</th>
+			<th>private</th>
+			<th>ED1</th>
+			<th>afrAmer</th>
+		</tr>
+		<tr> <!-- ROW 4: 9826 -->
+			<th>9826</th>
+			<th>CLEG</th>
+			<th>california</th>
+			<th>45000</th>
+			<th>homeSchool</th>
+			<th>ED2</th>
+			<th>asian</th>
+		</tr>
+		<tr> <!-- ROW 5: 1037 -->
+			<th>1037</th>
+			<th>IR</th>
+			<th>asia</th>
+			<th>85000</th>
+			<th>private</th>
+			<th>ED1</th>
+			<th>latino</th>
+		</tr>
+		<tr> <!-- ROW 6: 6342 -->
+			<th>6342</th>
+			<th>math</th>
+			<th>texas</th>
+			<th>35000</th>
+			<th>public</th>
+			<th>RD</th>
+			<th>other</th>
+		</tr>
+		<tr> <!-- ROW 7: 7281 -->
+			<th>7281</th>
+			<th>finance</th>
+			<th>colorado</th>
+			<th>150000</th>
+			<th>boarding</th>
+			<th>ED2</th>
+			<th>white</th>
+		</tr>
+		<tr> <!-- ROW 8: 2980 -->
+			<th>2980</th>
+			<th>primary</th>
+			<th>florida</th>
+			<th>85000</th>
+			<th>homeSchool</th>
+			<th>ED1</th>
+			<th>latino</th>
+		</tr>
+		<tr> <!-- ROW 9: 3356 -->
+			<th>3356</th>
+			<th>arts</th>
+			<th>NJ</th>
+			<th>120000</th>
+			<th>boarding</th>
+			<th>ED2</th>
+			<th>white</th>
+		</tr>
+		<tr> <!-- ROW 10: 953 -->
+			<th>953</th>
+			<th>film</th>
+			<th>wisconsin</th>
+			<th>55000</th>
+			<th>public</th>
+			<th>RD</th>
+			<th>afrAmer</th>
+		</tr>
+	</table>
+
+	<table id="region_table">
+		<tr> <!-- ROW 1: Labels -->
+			<th>area</th> <th>state</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>massachusetts</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>NJ</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>NY</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>connecticut</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>pennslyvania</th>
+		</tr>
+
+		<tr> <!-- south -->
+			<th>south</th> <th>texas</th>
+		</tr>
+		<tr> <!-- south -->
+			<th>south</th> <th>georgia</th>
+		</tr>
+		<tr> <!-- south -->
+			<th>south</th> <th>floria</th>
+		</tr>
+		<tr> <!-- south -->
+			<th>south</th> <th>carolinas</th>
+		</tr>
+		<tr> <!-- south -->
+			<th>south</th> <th>virginia</th>
+		</tr>
+
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>ohio</th>
+		</tr>
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>iowa</th>
+		</tr>
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>wisconsin</th>
+		</tr>
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>illinois</th>
+		</tr>
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>indiana</th>
+		</tr>
+
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>california</th>
+		</tr>
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>oregon</th>
+		</tr>
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>colorado</th>
+		</tr>
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>nevada</th>
+		</tr>
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>washington</th>
+		</tr>
+
+		<tr> <!-- international -->
+			<th>international</th> <th>asia</th>
+		</tr>
+		<tr> <!-- international -->
+			<th>international</th> <th>southAsia</th>
+		</tr>
+		<tr> <!-- international -->
+			<th>international</th> <th>europe</th>
+		</tr>
+		<tr> <!-- international -->
+			<th>international</th> <th>latinAmer</th>
+		</tr>
+	</table>
+
+	<table id="school_table">
+		<tr> <!-- ROW 1: Labels -->
+			<th>school</th> <th>major</th>
+		</tr>
+		<tr> <!-- SOC -->
+			<th>SOC</th> <th>journalism</th>
+		</tr>
+		<tr> <!-- SOC -->
+			<th>SOC</th> <th>PR</th>
+		</tr>
+		<tr> <!-- SOC -->
+			<th>SOC</th> <th>film</th>
+		</tr>
+		<tr> <!-- SOC -->
+			<th>SOC</th> <th>commStud</th>
+		</tr>
+
+		<tr> <!-- SPA -->
+			<th>SPA</th> <th>CLEG</th>
+		</tr>
+		<tr> <!-- SPA -->
+			<th>SPA</th> <th>poliSci</th>
+		</tr>
+		<tr> <!-- SPA -->
+			<th>SPA</th> <th>law</th>
+		</tr>
+		<tr> <!-- SPA -->
+			<th>SPA</th> <th>justLaw</th>
+		</tr>
+
+		<tr> <!-- KSB -->
+			<th>KSB</th> <th>finance</th>
+		</tr>
+		<tr> <!-- KSB -->
+			<th>KSB</th> <th>accounting</th>
+		</tr>
+		<tr> <!-- KSB -->
+			<th>KSB</th> <th>busiAdmin</th>
+		</tr>
+		<tr> <!-- KSB -->
+			<th>KSB</th> <th>busiEnt</th>
+		</tr>
+
+		<tr> <!-- CAS -->
+			<th>CAS</th> <th>math</th>
+		</tr>
+		<tr> <!-- CAS -->
+			<th>CAS</th> <th>science</th>
+		</tr>
+		<tr> <!-- CAS -->
+			<th>CAS</th> <th>arts</th>
+		</tr>
+		<tr> <!-- CAS -->
+			<th>CAS</th> <th>humanities</th>
+		</tr>
+
+		<tr> <!-- SOE -->
+			<th>SOE</th> <th>primary</th>
+		</tr>
+		<tr> <!-- SOE -->
+			<th>SOE</th> <th>secondary</th>
+		</tr>
+
+		<tr> <!-- SIS -->
+			<th>SIS</th> <th>IR</th>
+		</tr>
+		
+	</table>
+		
+	</div>
+
+	<div id="added">
+		
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="delete.css">
+	<script src="delete.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<h1>AU Student Database</h1>
+
+	
+
+	<p id="desc">In order to add a record, just click the "Add Record" button and a record will be added. <br>
+		In order to delete a record, just click the "Delete Record" button and a record will be deleted. <br>
+		In order to update a record, just click the "Update Record" button and a recored will be updated. <br>
+		If you wish to query the database, just click the query button. <br>
+		To view what the tables look like, hover over the "Table" tab and select which table you wish to view.
+	</p>
+
+	<nav id="menu">
+	<div>
+		<div id="change_tabs">
+			<button id="add"><a href="addrecord.html">Add Record</a></button> 
+			<button id="delete"><a href="deleterecord.html">Delete record</a></button> 
+			<button id="update"><a href="updaterecord.html">Update record</a></button> 
+			<button id="query"><a href="query.html">Query</a></button>
+		</div>
+
+		<div id="dropdown">
+			<div id="tables"> Tables 
+				<div id="three_tabs">
+					<button id="stu_table">Student</button>
+					<button id="reg_table">Region</button>
+					<button id="sch_table">School</button>
+				</div>
+			</div> 
+		</div>
+	</div>
+	</nav>
+
+	<hr>
+
+	<button id="deleted">Delete this record?</button>
+	<code>delete from region where state = 'iowa'; <br>
+			select * from region;</code>
+
+	<div id="changed">
+		
+	</div>
+	<table id="region_table">
+		<tr> <!-- ROW 1: Labels -->
+			<th>area</th> <th>state</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>massachusetts</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>NJ</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>NY</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>connecticut</th>
+		</tr>
+		<tr> <!-- northEast -->
+			<th>northEast</th> <th>pennslyvania</th>
+		</tr>
+
+		<tr> <!-- south -->
+			<th>south</th> <th>texas</th>
+		</tr>
+		<tr> <!-- south -->
+			<th>south</th> <th>georgia</th>
+		</tr>
+		<tr> <!-- south -->
+			<th>south</th> <th>floria</th>
+		</tr>
+		<tr> <!-- south -->
+			<th>south</th> <th>carolinas</th>
+		</tr>
+		<tr> <!-- south -->
+			<th>south</th> <th>virginia</th>
+		</tr>
+
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>ohio</th>
+		</tr>
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>iowa</th>
+		</tr>
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>wisconsin</th>
+		</tr>
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>illinois</th>
+		</tr>
+		<tr> <!-- midWest -->
+			<th>midWest</th> <th>indiana</th>
+		</tr>
+
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>california</th>
+		</tr>
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>oregon</th>
+		</tr>
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>colorado</th>
+		</tr>
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>nevada</th>
+		</tr>
+		<tr> <!-- westCoast -->
+			<th>westCoast</th> <th>washington</th>
+		</tr>
+
+		<tr> <!-- international -->
+			<th>international</th> <th>asia</th>
+		</tr>
+		<tr> <!-- international -->
+			<th>international</th> <th>southAsia</th>
+		</tr>
+		<tr> <!-- international -->
+			<th>international</th> <th>europe</th>
+		</tr>
+		<tr> <!-- international -->
+			<th>international</th> <th>latinAmer</th>
+		</tr>
+	</table>
+
+	<p id="backtotop"><a href="FinalProject.html">Back to top</a></p>
+
+</body>
+</html>
